@@ -11,7 +11,9 @@ export default Ember.Component.extend({
   },
   didInsertElement: function() {
     if (this.get('notification.options.fadeIn')) {
-      this.$().hide().fadeIn();
+      // TODO
+      //this.$().hide().fadeIn();
+      els.css('opacity', '1.0', )
     }
 
     if (this.get('notification.options.twitch')) {
